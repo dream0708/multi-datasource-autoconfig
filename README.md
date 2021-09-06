@@ -6,6 +6,8 @@
 
 主要特点：简单方便、支持多种类数据源、多种ORM配置、方便扩展
 
+关键技术：springboot datasoure dynamic-datasource mybatis tkmybatis mybatis-plus jta autoconfigure  druid
+
 #### 使用说明
 
 1. 添加依赖
@@ -34,7 +36,8 @@ public class Application {
 ~~~
 
 3. 配置propertis
-~~~properties#master
+~~~properties
+#master
 #是否需要配置AtomikosDataSource 默认false
 datasource.master.xa: true
 #实例化完是否需要调用init方法 DruidDataSource.init 默认false
